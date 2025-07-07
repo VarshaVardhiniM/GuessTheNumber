@@ -1,0 +1,106 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a8d5ba;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.game-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.success {
+  background-color: #e0ffe5;
+  box-shadow: 0 0 10px #a8d5ba;
+}
+
+h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+  margin: 8px 0;
+}
+
+.guess-input {
+  padding: 12px;
+  font-size: 18px;
+  width: 80%;
+  max-width: 240px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.guess-input:focus {
+  border-color: #007bff;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 12px 8px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guess-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.scoreboard {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px dashed #ccc;
+}
+
+.scoreboard p {
+  font-size: 17px;
+  color: #333;
+}
+
+/* Subtle fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
